@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function Button() {
+export default function Button(props) {
     const handleClick = ()=>{
-        alert("Hello World");
+        if (props.icon === -1) props.setCount(props.cnt - 1);
+        if (props.icon === +1) props.setCount(props.cnt + 1);
     }
   return (
     <div>
         <button onClick={handleClick}>
-                click
+                {props.icon}
         </button>
     </div>
   )
