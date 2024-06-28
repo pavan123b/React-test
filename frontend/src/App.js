@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './Components/button';
 import { useState } from 'react';
+import Buttonbackcolor from './Components/buttonbackcolor';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Button icon={minus} cnt={cnt} setCount={setCount}></Button>
       {cnt}
       <Button icon={plus} cnt={cnt} setCount={setCount}></Button>
+      <Buttonbackcolor></Buttonbackcolor>
     </div>
   );
 }
