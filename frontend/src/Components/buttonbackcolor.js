@@ -12,7 +12,7 @@ export default function Buttonbackcolor() {
   return (
     <div>
           <button onClick={handleClick} 
-          //style={color ? backgroundcolor = red:backgroundcolor = white}
+          //style={color ? "backgroundcolor = red":"backgroundcolor = white"}
           >
                 Changes color
         </button>

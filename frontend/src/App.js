@@ -3,6 +3,7 @@ import './App.css';
 import Button from './Components/button';
 import { useState } from 'react';
 import Buttonbackcolor from './Components/buttonbackcolor';
+import Form from './Components/form';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       {cnt}
       <Button icon={plus} cnt={cnt} setCount={setCount}></Button>
       <Buttonbackcolor></Buttonbackcolor>
+
+      <Form></Form>
     </div>
   );
 }
